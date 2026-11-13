@@ -14,9 +14,20 @@
       <label for="edad">Edad</label>
       <input name="edad" type="number" min="16" max="65">
       <br>
-      <label for="telefono">Edad</label>
+      <label for="telefono">Teléfono</label>
       <input name="telefono" type="tel" pattern="[0-9]{9}">
       <br>
+      <label for="web">Sitio web / Portfolio</label>
+      <input name="wev" type="url" placeholder="www.com">
+      <br>
+      <label for="ide">Selecciona una fruta:</label>
+      <input list="ide" id="ide" name="ide" />
+      <datalist id="ide">
+        <option value="IntelliJ IDEA"></option>
+        <option value="Visual Studio Code"></option>
+        <option value="Eclipse"></option>
+        <option value=" Android Studio"></option>
+      </datalist>
       <button type="submit">Iniciar Sesión</button>
     </form>
   </body>
