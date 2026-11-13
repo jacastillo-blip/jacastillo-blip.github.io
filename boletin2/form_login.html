@@ -5,8 +5,16 @@
   </head>
   <body>
     <form action="https://lm.ciclo.iesnervion.es/login.php" method="POST">
-      <label for="usuario">Nombre de Usuario o Email:</label>
-      <input type="text" name="usuario" placeholder="usuario@dominio.com" required>
+      <fieldset>
+        <legend>Datos Académicos</legend>
+        <label for="nombre">Nombre y Apellidos</label>
+        <input type="text" name="nombre" id="ciclo" required>
+        <label for="ciclo">Ciclo Formativo</label>
+        <select name="ciclo" id="ciclo">
+          <option value="DAM" selected>DAM</option>
+          <option value="DAW">DAW</option>
+          <option value="ASIR">ASIR</option>
+      </fieldset>
       <br>
       <label for="password">Contraseña:</label>
       <input type="password" name="password" required>
